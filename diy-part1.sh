@@ -17,19 +17,20 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-mkdir package/luci-app-openclash
-cd package/luci-app-openclash
-git init
-git remote add -f origin https://github.com/vernesong/OpenClash.git
-git config core.sparsecheckout true
-echo "luci-app-openclash" >> .git/info/sparse-checkout
-git pull origin master
-git branch --set-upstream-to=origin/master master
+#mkdir package/luci-app-openclash
+#cd package/luci-app-openclash
+#git init
+#git remote add -f origin https://github.com/vernesong/OpenClash.git
+#git config core.sparsecheckout true
+#echo "luci-app-openclash" >> .git/info/sparse-checkout
+#git pull origin master
+#git branch --set-upstream-to=origin/master master
 
-mkdir package/luci-app-adguardhome
-cd package/luci-app-adguardhome
-git init
-git remote add -f origin https://github.com/rufengsuixing/luci-app-adguardhome.git
-echo "luci-app-adguardhome" >> .git/info/sparse-checkout
-git pull origin master
-git branch --set-upstream-to=origin/master master
+echo 'src-git luci-app-adguard https://github.com/rufengsuixing/luci-app-adguardhome' >>feeds.conf.default
+#mkdir package/luci-app-adguardhome
+#cd package/luci-app-adguardhome
+#git init
+#git remote add -f origin https://github.com/rufengsuixing/luci-app-adguardhome.git
+#echo "luci-app-adguardhome" >> .git/info/sparse-checkout
+#git pull origin master
+#git branch --set-upstream-to=origin/master master
