@@ -25,6 +25,7 @@
 #echo "luci-app-openclash" >> .git/info/sparse-checkout
 #git pull origin master
 #git branch --set-upstream-to=origin/master master
+
 git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
 
 #mkdir package/luci-app-adguardhome
@@ -34,4 +35,5 @@ git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
 #echo "luci-app-adguardhome" >> .git/info/sparse-checkout
 #git pull origin master
 #git branch --set-upstream-to=origin/master master
-git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+
+#git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
